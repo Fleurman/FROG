@@ -1,0 +1,31 @@
+
+
+
+Voici l'élément html dans lequel les articles datés sont chargés: 
+
+;;html;;
+; <section frog id="dated" flow="article" pagination="top" perpage="1"></section>
+;;;;
+
+Et pour les articles non datés: 
+
+;;html;;
+; <section frog id="undated" preset="preset1"></section>
+;;;;
+
+La variable ;preset est définie dans le scope window:
+
+;;js;;
+; function loaded(flow){
+&emsp;console.log('The flow has loaded');
+}
+var preset1 = {
+&emsp;flow:"article",
+&emsp;state:"undated",
+&emsp;pagination:"top",
+&emsp;perpage:"2",
+&emsp;preload:true,
+&emsp;loaded:'loaded',
+&emsp;query:"cat(-draft)"
+}
+;;;;

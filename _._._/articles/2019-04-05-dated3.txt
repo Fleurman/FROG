@@ -1,0 +1,18 @@
+
+Les articles sont formatés selon un système de templating html et d'expressions spéciales.
+
+Voici le template de cet article: 
+
+;;html;;
+; <article { class = classes }>
+&emsp;<h2>{title}</h2>
+&emsp;<hr>
+&emsp;<div class="meno">
+&emsp;&emsp;{content}
+&emsp;</div>
+&emsp;<span>{date}</span>
+</article>
+;;;;
+
+
+

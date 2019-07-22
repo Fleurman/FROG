@@ -1,0 +1,76 @@
+.liveview {
+	position:relative;
+	background-color:white;
+	box-shadow:1px 1px 5px grey;
+	min-height:200px;
+	overflow:hidden;
+	margin:20px 0;
+}
+.liveview [class^="lv-panel"] {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	padding:5px;
+	margin-bottom:5px;
+}
+.liveview [class^="lv-panel"][lang] {
+	padding-top:24px;
+}
+.liveview [class^="lv-panel"][lang]::after {
+	content: attr(lang);
+	position:absolute;
+	top:0;left:0;
+	padding:0 6px 0 2px;
+	font-size:14px;
+	color:white;
+	background-color:black;
+	border-radius: 0 0 10px 0;
+}
+.liveview .lv-panel-left{
+	right:50%;
+	background-color:rgb(253,253,253);
+}
+.liveview .lv-editor{
+	display:block;
+	border:none;
+	width:100%;
+	height:100%;
+	padding:0;
+	background-color:rgb(253,253,253);
+	outline:none;
+}
+.liveview .lv-panel-right{
+	left:50%;
+	box-shadow:-2px 0 10px lightgrey;
+}
+.liveview .lv-view{
+	width:100%;
+	height:100%;
+	overflow-y:auto;
+}
+.liveview .lv-height {
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+	height:5px;
+	background-color:grey;
+	color:white;
+	line-height:2px;
+	font-size:16px;
+	text-align:center;
+	cursor:pointer;
+	overflow: hidden;
+}
+.liveview .lv-reset {
+	position:absolute;
+	top:6px;right:6px;
+	opacity:0.3;
+	width:16px;
+	height:16px;
+	cursor:pointer;
+	background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAATklEQVR4Ae3NMQ4AIAwCQP7/aVwcNdoKUaMkbC0HvBDWWsctAGEECCNAGAEKax3fA6gRRJFRQvc2gNGHDNBDpEALkQMzo+cDK/1ADrgvBdD86xUI1HYqAAAAAElFTkSuQmCC");
+	background-size:100%;
+}

@@ -1,0 +1,3 @@
+<<Le_coeur_de_l'outil_FROG consiste à charger du contenu ^(sous_forme_d'articles) de manière asynchrone.
+Chaque contenu d'article ^(écrit_en_language_de_markup_Meno) se trouve dans un fichier texte séparé.
+Un fichier ;_catalog.json contient les références et métadonnées.
